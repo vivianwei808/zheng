@@ -128,17 +128,18 @@ public class AESUtil {
     }
 
     public static void main(String[] args) {
-        String[] keys = {
-                "", "123456"
-        };
-        System.out.println("key | AESEncode | AESDecode");
-        for (String key : keys) {
-            System.out.print(key + " | ");
-            String encryptString = AESEncode(key);
-            System.out.print(encryptString + " | ");
-            String decryptString = AESDecode(encryptString);
-            System.out.println(decryptString);
-        }
+//        String[] keys = {
+//                "", "123456"
+//        };
+//        System.out.println("key | AESEncode | AESDecode");
+//        for (String key : keys) {
+//            System.out.print(key + " | ");
+//            String encryptString = AESEncode(key);
+//            System.out.print(encryptString + " | ");
+//            String decryptString = AESDecode(encryptString);
+//            System.out.println(decryptString);
+//        }
+        System.out.println("本地数据库密码为空，加密后的结果："+AESUtil.AESEncode(""));
     }
 
 }
